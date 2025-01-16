@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1a1a1a;
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+canvas {
+    background-color: #333;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5);
+    image-rendering: pixelated; /* Retro look */
+}
+
+#hud {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 35px; /* Increased font size for Score Card */
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#hud p {
+    margin: 10px 0; /* More spacing between Score and Level */
+}
+
+#game-over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#game-over h1 {
+    font-size: 80px; /* Larger Game Over text */
+    margin: 0;
+}
+
+#game-over p {
+    font-size: 35px; /* Larger score text */
+    margin: 20px 0;
+}
+
+#restart-button {
+    background-color: #FF5733;
+    color: white;
+    border: none;
+    padding: 15px 30px; /* Larger Restart Button */
+    font-size: 30px; /* Increased font size */
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#restart-button:hover {
+    background-color: #FF7733;
+}
